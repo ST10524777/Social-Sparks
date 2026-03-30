@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ Social Sparks"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A73E8"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What time of day is it, Cora?"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbMorning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌄 Morning"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbMidMorning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="☕ Mid-Morning"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbAfternoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="☀️ Afternoon"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbSnackTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍕 Afternoon Snack Time"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbDinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍖 Dinner"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbAfterDinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌙 After Dinner / Night"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSuggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Get My Spark"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔄 Reset"
+            android:backgroundTint="#CCCCCC"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:background="#D6E4FF"
+            android:padding="16dp"
+            android:lineSpacingExtra="4dp"/>
+
+    </LinearLayout>
+</ScrollView>
